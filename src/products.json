@@ -1,0 +1,38 @@
+{"products": [
+	{
+		"id": 1,
+		"title": "Vegeterian Dog Food",
+		"image": "images/1076085000_f2c39ddd24_z.jpg",
+		"price": 25
+	},
+	{
+		"id": 2,
+		"title": "Dog Bone Collection",
+		"image": "images/283182167_5a1b5b13c1_z.jpg",
+		"price": 50
+	},
+	{
+		"id": 3,
+		"title": "Stylish Dog Collar",
+		"image": "images/QuickCollarNeck_wb.jpg",
+		"price": 8
+	},
+	{
+		"id": 4,
+		"title": "Dry cat food",
+		"image": "images/11947278725_979391b9a2_z.jpg",
+		"price": 8
+	},
+	{
+		"id": 5,
+		"title": "Wet cat food",
+		"image": "images/2705207852_2758109a1b_z.jpg",
+		"price": 10
+	},
+	{
+		"id": 6,
+		"title": "Mechanical Mole Toy for Cat",
+		"image": "images/12099351973_062cdcd1ee_z.jpg",
+		"price": 2
+	}
+]}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Simple Checkout Form</title>
+	</head>
+
+	<body ng-app="step1App" ng-controller="step1Ctrl">
+
+		<form stripe-form="stripeCallback">
+			<input ng-model="number" placeholder="Card Number" />
+			<input ng-model="expiry" placeholder="Expiration" />
+			<input ng-model="cvc" placeholder="CVC" />
+			<button type="submit">Submit</button>
+		</form>
+
+		<!-- Angular, stripe -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+		<!-- angular-payments library - you probably want to install it through either bower or npm -->
+		<script src="http://cdn.rawgit.com/laurihy/angular-payments/2472bc9befa256780d106a8e53a9dea12b7341ed/lib/angular-payments.js"></script>
+
+		<!-- our code -->
+		<script src="step1.js"></script>
+	</body>
+</html>

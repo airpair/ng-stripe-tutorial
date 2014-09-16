@@ -1,0 +1,121 @@
+button.cancel {
+	background: #999;
+	border-color: #999;
+}
+
+button.cancel:hover {
+	background: #888;
+}
+
+.product-list {
+	margin: 0 0 170px 0;
+}
+
+.product-list figure {
+	max-width: 100%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.product-list figure img {
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.product-list figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 20px;
+	height: 128px;
+	background: #2c3f52;
+	color: lightgray;
+	transform: translateY(100%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+	opacity: 0;
+}
+
+.product-list .price:before {
+	content: "Price: ";
+}
+
+.product-list figcaption h3 {
+	margin: 0 0 8px;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+}
+
+.product-list figure:hover img {
+	transform: translateY(-50px);
+}
+
+.product-list figure:hover figcaption {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.shopping-cart {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 16px;
+	background: #2c3f52;
+	color: lightgray;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.shopping-cart h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.shopping-cart.ng-enter, .shopping-cart.ng-leave {
+	transition: 0.5s linear all;
+}
+
+.shopping-cart.ng-enter {
+	opacity: 0;
+	transform: translateY(100%);
+}
+
+.shopping-cart.ng-enter.ng-enter-active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.shopping-cart .cart-item {
+	margin-right: 16px;
+	position: relative;
+}
+
+.shopping-cart .cart-item img {
+	height: 92px;
+	width: 92px;
+}
+
+.shopping-cart .cart-item .badge {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	background-color: white;
+	color: #2c3f52;
+	font-weight: bold;
+	padding: 6px;
+	line-height: 100%;
+	border-radius: 50%;
+}
+
+.shopping-cart button {
+	position: absolute;
+	bottom: 0px;
+	right: 16px;
+}
+
